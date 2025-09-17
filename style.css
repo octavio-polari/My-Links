@@ -26,7 +26,7 @@ h1.name {
 }
 
 hr {
-  border-top: 2px dotted #423f32;
+    border-top: 2px dotted #423f32;
 }
 
 h4.profession {
@@ -75,8 +75,16 @@ a:hover {
     font-size: 15.5px;
 }
 
-  @media screen and (max-width: 1500px) {
+@media only screen and (max-width: 760px) and (orientation: portrait) {
     body {
         display: block;
     }
-  }
+}
+
+@media only screen and (min-width: 760px) and (orientation: portrait) {
+    body {
+        margin: 0px;
+        display: block;
+        margin-top: 5px;
+    }
+}
