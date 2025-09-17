@@ -78,6 +78,5 @@ a:hover {
   @media screen and (max-width: 768px) {
     body {
         display: block;
-        /* justify-content: safe; */
     }
   }
