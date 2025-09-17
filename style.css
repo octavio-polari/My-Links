@@ -1,0 +1,80 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+body {
+    background-color: #CDCFC0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: url("src/background.png");
+    margin: 20px;
+    margin-top: 150px;
+}
+
+div.title {
+    justify-items: center;
+}
+
+h1.name {
+    font-size: 26.7px;
+    color: #423F32;
+}
+
+hr {
+  border-top: 2px dotted #423f32;
+}
+
+h4.profession {
+    font-size: 12px;
+    color: #423F32;
+}
+
+div.main-card {
+    display: grid;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    background: #F1EBE5;
+    width: 400px;
+    height: 500px;
+    border-radius: 5px;
+}
+
+li {
+    width: 300px;
+    display: flex;
+    margin-top: 45px;
+    margin-bottom: 50px;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-right: 45px;
+    outline-style: auto;
+    outline-width: 1px;
+    outline-color: #423F32;
+    padding: 10px;
+}
+
+a {
+    display: flex;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    resize: both;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px
+}
+
+a:hover {
+    color: rgb(255, 255, 255);
+    font-size: 15.5px;
+}
