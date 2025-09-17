@@ -75,7 +75,7 @@ a:hover {
     font-size: 15.5px;
 }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1500px) {
     body {
         display: block;
     }
