@@ -70,16 +70,6 @@ a {
     padding: 20px;
 }
 
-a {
-  -webkit-tap-highlight-color: transparent;
-}
-
-a:focus,
-a:active {
-  outline: 1px solid #423F32;
-}
-
-
 img {
     resize: both;
     margin-right: 10px;
@@ -91,23 +81,6 @@ img {
 a:hover {
     color: rgb(255, 255, 255);
     font-size: 15.5px;
-}
-
-/* Remove o highlight azul padrão do iOS */
-input,
-textarea,
-select,
-button {
-  -webkit-tap-highlight-color: transparent; /* remove highlight ao tocar */
-  outline: none; /* remove o contorno padrão */
-}
-
-/* Define a cor do outline desejada */
-input:focus,
-textarea:focus,
-select:focus,
-button:focus {
-  outline: 1px solid #423F32;
 }
 
 
