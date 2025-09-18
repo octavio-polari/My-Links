@@ -1,17 +1,12 @@
-// Injetando regra global no <head>
+// main.js
 const style = document.createElement("style");
 style.textContent = `
-  * {
+  a, a:focus, a:active {
+    outline: none !important;
     -webkit-tap-highlight-color: transparent !important;
   }
-
-  input:focus,
-  textarea:focus,
-  select:focus,
-  button:focus,
-  li:focus,
-  li:active {
-    outline: 2px solid #ff0000 !important; /* cor que você quer */
+  li {
+    outline: 1px solid #423F32; /* mantém o seu outline customizado */
     outline-offset: 2px;
   }
 `;

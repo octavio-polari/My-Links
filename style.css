@@ -62,6 +62,10 @@ li {
     outline-color: #423F32;
 }
 
+li::highlight {
+    outline: none;
+}
+
 a {
     display: flex;
     width: 300px;
