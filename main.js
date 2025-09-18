@@ -9,8 +9,8 @@ style.textContent = `
   textarea:focus,
   select:focus,
   button:focus,
-  a:focus,
-  a:active {
+  li:focus,
+  li:active {
     outline: 2px solid #ff0000 !important; /* cor que você quer */
     outline-offset: 2px;
   }
