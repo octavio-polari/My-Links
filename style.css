@@ -1,40 +1,46 @@
 * {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "Montserrat", sans-serif;
     text-decoration: none;
     list-style: none;
-    color: black;
+    color: #423F32;
     align-items: center;
     align-content: center;
     justify-content: space-evenly;
+    margin: 0;
 }
 
 body {
     background-color: #CDCFC0;
     display: flex;
     background-image: url("src/background.png");
-    margin: 20px;
+    margin: 10px;
     margin-top: 150px;
 }
 
-div.title {
+.title {
+    display: grid;
     justify-items: center;
+    margin: 10px;
 }
 
-h1.name {
-    font-size: 26.7px;
-    color: #423F32;
+.name {
+    font-family: "League Spartan", sans-serif;
+    font-size: 40px;
 }
 
 hr {
     border-top: 2px dotted #423f32;
+    margin: 20px;
 }
 
-h4.profession {
-    font-size: 12px;
-    color: #423F32;
+.profession {
+    font-size: 15px;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    padding: 0;
 }
 
-div.main-card {
+.main-card {
     justify-items: center;
     background: #F1EBE5;
     border-radius: 5px;
@@ -53,7 +59,6 @@ li {
     outline-style: auto;
     outline-width: 1px;
     outline-color: #423F32;
-    padding: 10px;
 }
 
 a {
@@ -61,11 +66,13 @@ a {
     width: 300px;
     align-items: center;
     justify-content: center;
+    padding: 20px;
 }
 
 img {
     resize: both;
     margin-right: 10px;
+    margin-left: 10px;
     width: 30px;
     height: 30px
 }
@@ -75,16 +82,39 @@ a:hover {
     font-size: 15.5px;
 }
 
-@media only screen and (max-width: 760px) and (orientation: portrait) {
-    body {
-        display: block;
+@media only screen and (max-width: 900px) and (orientation: portrait) {
+    .name {
+        margin: 0;
     }
-}
 
-@media only screen and (min-width: 760px) and (orientation: portrait) {
     body {
         margin: 0px;
         display: block;
         margin-top: 5px;
+    }
+
+    .title {
+        margin: 0;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (min-width: 760px) and (orientation: portrait) {
+
+    .name {
+        margin: 0;
+    }
+
+    body {
+        margin: 0px;
+        display: block;
+        margin-top: 5px;
+    }
+
+    .title {
+        margin: 0;
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
 }
