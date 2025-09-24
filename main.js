@@ -14,11 +14,12 @@ document.head.appendChild(style);
 
 const GOOGLE_APS_SCRIPTS_URL = "https://script.google.com/macros/s/AKfycbxEUZf0gxI_EWH5gPN09OKFXyP8dkMOUMAgYtkAyelt6w2UCBm7_b0RzWZhkbYsC0SINA/exec";
 
-function registrarEvento(type) {
+function registrarEvento(tipo) {
   const payload = {
-    type,
+    tipo,
     dataHora: new Date().toLocaleDateString(),
-    language: Intl.DateTimeFormat().resolvedOptions().timeZone,
+    idioma: navigator.language || "Unknown",
+    timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
     userAgent: navigator.userAgent
   };
 
@@ -38,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.querySelectorAll("a").forEach(link => {
   link.addEventListener("click", () => {
-    const type = link.dataset.type || "OUTRO";
-    registrarEvento(type);
+    const tipo = link.dataset.tipo || "OUTRO";
+    registrarEvento(tipo);
   });
 });
