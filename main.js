@@ -25,8 +25,9 @@ function registrarEvento(tipo) {
 
   fetch(GOOGLE_APS_SCRIPTS_URL, {
     method: "POST",
-    mode: "no-cors",
-    
+    headers: {
+      "Content-Type": "application/json"
+    },
     body: JSON.stringify(payload)
   });
 }
