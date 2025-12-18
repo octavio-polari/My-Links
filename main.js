@@ -17,7 +17,7 @@ const GOOGLE_APS_SCRIPTS_URL = "https://script.google.com/macros/s/AKfycbxEUZf0g
 function registrarEvento(tipo) {
   const payload = {
     tipo,
-    dataHora: new Date().toLocaleDateString("pt-BR", "dd-MM-yyyy, hh:mm"),
+    dataHora: new Date().toLocaleDateString("pt-BR", { year: 'numeric', month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric'}),
     idioma: navigator.language || "Unknown",
     timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
     userAgent: navigator.userAgent
